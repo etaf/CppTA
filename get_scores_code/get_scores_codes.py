@@ -98,8 +98,7 @@ def save_codes(crawler,st_dict):
 def main():
 
     st_dict = get_st_dict("tmp")
-    #tmp = get_name_pwd_from_console()
-    tmp = ['admin','nimda']
+    tmp = get_name_pwd_from_console()
     crawler = PAT_crawler(tmp[0],tmp[1])
 
     while crawler.logined() == False:
